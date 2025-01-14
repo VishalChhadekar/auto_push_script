@@ -12,5 +12,13 @@ const dbConfig = {
         database: 'my_database'
     }
 };
+const getDbConfig = (dbType) => {
+    if (dbConfig[dbType]) {
+        return dbConfig[dbType];
+    } else {
+        throw new Error('Unsupported database type');
+    }
+};
 
+module.exports = { dbConfig, getDbConfig };
 module.exports = dbConfig;
