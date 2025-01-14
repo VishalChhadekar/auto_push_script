@@ -1,8 +1,24 @@
 const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'my_database'
+    mysql: {
+        host: 'localhost',
+        user: 'root',
+        password: 'password',
+        database: 'my_database'
+    },
+    postgresql: {
+        host: 'localhost',
+        user: 'postgres',
+        password: 'password',
+        database: 'my_database'
+    }
+};
+const getDbConfig = (dbType) => {
+    if (dbConfig[dbType]) {
+        return dbConfig[dbType];
+    } else {
+        throw new Error('Unsupported database type');
+    }
 };
 
+module.exports = { dbConfig, getDbConfig };
 module.exports = dbConfig;
