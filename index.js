@@ -13,3 +13,6 @@ app.listen(port, () => {
 app.get('/api', (req, res) => {
     res.json({ message: 'This is the API endpoint' });
 });
+app.get('/tickets', (req, res) => {
+    res.json({ message: 'This is the tickets endpoint' });
+});
