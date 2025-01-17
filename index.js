@@ -22,3 +22,6 @@ app.get('/jobs', (req, res) => {
 app.get('/jobs', (req, res) => {
     res.json({ message: 'This is the jobs endpoint' });
 });
+app.get('/getMultipleJobs', (req, res) => {
+    res.json({ message: 'This is the jobs endpoint' });
+});

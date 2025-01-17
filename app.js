@@ -14,8 +14,10 @@ const dbConfig = {
 };
 const getDbConfig = (dbType) => {
     if (dbConfig[dbType]) {
+        console.log(dbConfig[dbType]);
         return dbConfig[dbType];
     } else {
+        console.log('Unsupported database type');
         throw new Error('Unsupported database type');
     }
 };
