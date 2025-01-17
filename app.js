@@ -5,7 +5,7 @@ const dbConfig = {
         password: 'password',
         database: 'my_database'
     },
-    postgresql: {
+    mysl: {
         host: 'localhost',
         user: 'postgres',
         password: 'password',
@@ -21,4 +21,3 @@ const getDbConfig = (dbType) => {
 };
 
 module.exports = { dbConfig, getDbConfig };
-module.exports = dbConfig;
