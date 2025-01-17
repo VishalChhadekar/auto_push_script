@@ -19,3 +19,6 @@ app.get('/tickets', (req, res) => {
 app.get('/jobs', (req, res) => {
     res.json({ message: 'This is the jobs endpoint' });
 });
+app.get('/jobs', (req, res) => {
+    res.json({ message: 'This is the jobs endpoint' });
+});
